@@ -77,7 +77,7 @@ const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Update Contact
-let contact = document.getElementsByClassName("contact")[0];
+const contact = document.getElementsByClassName("contact")[0];
 contact.getElementsByTagName("h4")[0].innerHTML = siteContent["contact"]["contact-h4"]
 contact.getElementsByTagName("p")[0].innerHTML = siteContent["contact"]["address"]
 contact.getElementsByTagName("p")[1].innerHTML = siteContent["contact"]["phone"]
