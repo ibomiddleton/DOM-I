@@ -60,7 +60,7 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 // console.log(document.getElementsByClassName("cta")[0])
 
 // Update MainContent
-let textContentList = document.querySelectorAll(".text-content");
+const textContentList = document.querySelectorAll(".text-content");
 
 textContentList[0].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["features-h4"];
 textContentList[0].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["features-content"];
@@ -73,7 +73,7 @@ textContentList[3].getElementsByTagName("p")[0].innerHTML = siteContent["main-co
 textContentList[4].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["vision-h4"];
 textContentList[4].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["vision-content"];
 
-let middleImg = document.getElementById("middle-img");
+const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Update Contact
@@ -84,7 +84,7 @@ contact.getElementsByTagName("p")[1].innerHTML = siteContent["contact"]["phone"]
 contact.getElementsByTagName("p")[2].innerHTML = siteContent["contact"]["email"]
 
 // Update Footer
-let footer = document.querySelector("footer");
+const footer = document.querySelector("footer");
 footer.getElementsByTagName("p")[0].innerHTML = siteContent["footer"]["copyright"];
 
 // Add New Content
@@ -95,8 +95,8 @@ selectedNavLinks.forEach((link,i) => {
 
 // Add two items to navigation
 selectedNavLinks = document.getElementsByTagName("nav")[0];
-let createNewNode = (name) => {
-  let newNode = document.createElement("a");
+const createNewNode = (name) => {
+  const newNode = document.createElement("a");
   newNode.innerHTML = name;
   return newNode;
 }
